@@ -7,6 +7,7 @@ import AddLogModal from "./components/logs/AddLogModal";
 import EditLogModal from "./components/logs/EditLogModal";
 import Logs from "./components/logs/Logs";
 import AddTechModal from "./components/techs/AddTechModal";
+import TechListModal from "./components/techs/TechListModal";
 
 const App = () => {
     //! Initialize Materialize JS
@@ -21,6 +22,7 @@ const App = () => {
                 <AddLogModal />
                 <EditLogModal />
                 <AddTechModal />
+                <TechListModal />
             </div>
         </>
     );

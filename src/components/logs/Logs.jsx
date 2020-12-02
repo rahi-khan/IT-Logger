@@ -4,20 +4,20 @@ import Preloader from "../layout/Preloader";
 import LogItem from "./LogItem";
 
 const Logs = () => {
-    const [logs, setlogs] = useState([]);
-    const [loading, setloading] = useState(false);
+    const [logs, setLogs] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     //! get the logs data[Arr] from the database
     useEffect(
         () =>
             (async () => {
-                setloading(true);
+                setLoading(true);
 
                 const res = await Axios.get("/logs");
                 const data = await res.data;
 
-                setlogs(data);
-                setloading(false);
+                setLogs(data);
+                setLoading(false);
             })(),
         []
     );
