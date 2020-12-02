@@ -5,7 +5,7 @@ import TechItem from "./TechItem";
 const TechListModal = () => {
     const [techs, setTechs] = useState([]);
 
-    //! get the logs data[Arr] from the database
+    //! get the tech data[Arr] from the database
     useEffect(
         () =>
             (async () => {
@@ -17,7 +17,7 @@ const TechListModal = () => {
     );
 
     //! show preloader if loading
-    //! else for each log item{Obj} show a logitem with data
+    //! else for each tech item{Obj} show a techitem with data
     return (
         <div id="tech-list-modal" className="modal">
             <div className="modal-content">
