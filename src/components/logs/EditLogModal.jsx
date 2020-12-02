@@ -1,7 +1,7 @@
 import { useState } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-const AddLogModal = () => {
+const EditLogModal = () => {
     const [message, setMessage] = useState("");
     const [tech, setTech] = useState("");
     const [attention, setAttention] = useState(false);
@@ -10,15 +10,6 @@ const AddLogModal = () => {
         if (message === "" || tech === "") {
             M.toast({ html: "Please enter a message and tech" });
         } else {
-            // const newLog = {
-            //     message,
-            //     attention,
-            //     tech,
-            //     date: new Date(),
-            // };
-
-            // addLog(newLog);
-
             M.toast({ html: `Log added by ${tech}` });
 
             //// Clear Fields
@@ -34,10 +25,10 @@ const AddLogModal = () => {
     };
 
     return (
-        <div id="add-log-modal" className="modal" style={modalStyle}>
+        <div id="edit-log-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
                 {/*//// Modal Header */}
-                <h4>Enter System Log</h4>
+                <h4>Edit System Log</h4>
 
                 {/*//// Log Message Input[Text] */}
                 <div className="row">
@@ -107,4 +98,4 @@ const AddLogModal = () => {
     );
 };
 
-export default AddLogModal;
+export default EditLogModal;
