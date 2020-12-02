@@ -6,6 +6,7 @@ import SearchBar from "./components/layout/SearchBar";
 import AddLogModal from "./components/logs/AddLogModal";
 import EditLogModal from "./components/logs/EditLogModal";
 import Logs from "./components/logs/Logs";
+import AddTechModal from "./components/techs/AddTechModal";
 
 const App = () => {
     //! Initialize Materialize JS
@@ -19,6 +20,7 @@ const App = () => {
                 <AddBtn />
                 <AddLogModal />
                 <EditLogModal />
+                <AddTechModal />
             </div>
         </>
     );
